@@ -1,5 +1,5 @@
 {
-  "name": "swagger-simplest-api",
+  "name": "levenshtein-api",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
@@ -8,16 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/falbarp/Swagger-simplest-api.git"
+    "url": "git+https://github.com/falbarp/Levenshtein-api.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/falbarp/Swagger-simplest-api/issues"
+    "url": "https://github.com/falbarp/Levenshtein-api.git/issues"
   },
-  "homepage": "https://github.com/falbarp/Swagger-simplest-api#readme",
+  "homepage": "https://github.com/falbarp/Levenshtein-api.git#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "fast-levenshtein": "^3.0.0",
     "swagger-ui-express": "^4.1.6"
   }
 }

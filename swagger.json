@@ -1,8 +1,8 @@
 {
     "swagger": "2.0",
     "info": {
-      "title": "Calculator",
-      "description": "API calculator with Swagger",
+      "title": "Levenshtein Distance",
+      "description": "API for Levenshtein Distance calculation",
       "version": "1.0"
     },
     "host": "localhost:8001",
@@ -11,124 +11,35 @@
       "http"
     ],
     "paths": {
-      "/addition/{a}&{b}": {
+      "/distance/{a}&{b}": {
         "get": {
-          "description": "Choose two numbers",
+          "description": "Enter two words",
           "operationId": "ADD",
           "parameters": [
             {
               "name": "a",
               "in": "path",
-              "description": "First number. Default Value <code>10</code>.",
+              "description": "First word.",
               "required": true,
-              "default": "10",
+              "default": "example",
               "enum": [
-                "10"
+                "example"
               ]
             },
             {
               "name": "b",
               "in": "path",
-              "description": "Second number. Default Value <code>15</code>.",
+              "description": "First word.",
               "required": true,
-              "default": "15",
+              "default": "exemplo",
               "enum": [
-                "15"
+                "Exemplo"
               ]
             }
           ],
           "responses": {}
         }
-      },
-
-      "/substraction/{a}&{b}": {
-        "get": {
-          "description": "Choose two numbers",
-          "operationId": "ADD",
-          "parameters": [
-            {
-              "name": "a",
-              "in": "path",
-              "description": "First number. Default Value <code>10</code>.",
-              "required": true,
-              "default": "10",
-              "enum": [
-                "10"
-              ]
-            },
-            {
-              "name": "b",
-              "in": "path",
-              "description": "Second number. Default Value <code>15</code>.",
-              "required": true,
-              "default": "15",
-              "enum": [
-                "15"
-              ]
-            }
-          ],
-          "responses": {}
-        }
-      },
-      "/multiplication/{a}&{b}": {
-        "get": {
-          "description": "Choose two numbers",
-          "operationId": "ADD",
-          "parameters": [
-            {
-              "name": "a",
-              "in": "path",
-              "description": "First number. Default Value <code>10</code>.",
-              "required": true,
-              "default": "10",
-              "enum": [
-                "10"
-              ]
-            },
-            {
-              "name": "b",
-              "in": "path",
-              "description": "Second number. Default Value <code>2</code>.",
-              "required": true,
-              "default": "2",
-              "enum": [
-                "2"
-              ]
-            }
-          ],
-          "responses": {}
-        }
-      },
-      "/division/{a}&{b}": {
-        "get": {
-          "description": "Choose two numbers",
-          "operationId": "ADD",
-          "parameters": [
-            {
-              "name": "a",
-              "in": "path",
-              "description": "First number. Default Value <code>9</code>.",
-              "required": true,
-              "default": "9",
-              "enum": [
-                "9"
-              ]
-            },
-            {
-              "name": "b",
-              "in": "path",
-              "description": "Second number. Default Value <code>3</code>.",
-              "required": true,
-              "default": "3",
-              "enum": [
-                "3"
-              ]
-            }
-          ],
-          "responses": {}
-        }
-      }
-      
+      }     
 
     }   
 }
